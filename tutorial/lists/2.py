@@ -22,4 +22,12 @@ print(N[1][2])          #Из 2 строки получаем 3 элемент
 col2=[row[1] for row in N]  #получаем 2 столбец
 print(col2)
 print(N)
+col=[row[1]+1 for row in N] #Добавить 1 к каждому элементу во втором столбце
+print (col)
+col1=[row[1] for row in N if row[1] % 2==0] #отфильтровать нечетные значения во 2 столбце
+print(col1)
+diag = [N[i][i] for i in [0,1,2]]   #Выборка диогонали матрицы
+print(diag)
+doubles = [c * 2 for c in 'spam']   #Дублирование символов в строке с-обозначает символ
+print(doubles)
 
