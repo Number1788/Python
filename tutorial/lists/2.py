@@ -36,5 +36,8 @@ print(next (G))             # 2 строка
 print(list(map(sum,N)))     # с помощью map оборачиваем все сразу и выводи все суммы
 print({sum(row) for row in N})  #Создает множество сум строк
 print({i:sum(N[i]) for i in range(3)})  #Таблица ключ/значение сумм строк
+print([ord(x) for x in 'spaam'])  # Список кодов символов
+print({ord(x) for x in 'spaam'})    #Множества убирают дубликаты
+print({x:ord(x) for x in 'spaam'})  #Ключи словарей являются уникальными
 
 
