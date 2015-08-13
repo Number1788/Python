@@ -5,3 +5,7 @@ d=decimal.Decimal('3.141')
 print(d+1)
 decimal.getcontext().prec=2                         #Установкак количества знаков после заптяой
 print(decimal.Decimal('1')/decimal.Decimal('3'))
+from fractions import Fraction                     #Рациональные числа:числитель + знаменатель
+f= Fraction(2,3)
+print(f+1)
+print(f +Fraction(1,3))
