@@ -18,3 +18,15 @@ print(float(x))                             #Перобразуем fraction -> 
 print(float(z))
 print(Fraction.from_float(1.75))            #Преобразуем float -> fraction
 print(Fraction(*(1.75).as_integer_ratio ()))
+print(x*2)                                  #Fraction * int -> fraction
+print(x*2.0)                                #Fraction * float - > float
+print(x*1./3)                               #Fraction * float - > float
+print(x*4./3)                               
+print(x*Fraction(4,3) )                     #Fraction * Fraction - > float
+print(4.0/3)
+print((4.0/3).as_integer_ratio() )          #Произойдет потеря точности
+a = x * Fraction(*(4.0/3).as_integer_ratio())
+print(a)
+print(2001599834386887/4503599627370496)    
+a=a.limit_denominator(10)                   #упростить до ближайшего рационального
+print(a)
