@@ -24,5 +24,18 @@ S='hello'
 print(S[::-1])                                                          #пероварачиваем слово наоборот
 S='abcedfq'
 print(S[5:1:-1])                                                        #со второго по 5 в обратном порядке
-
-
+print('spam'[1:3])                                                      #Синтаксис извлечения среза
+print('spam'[slice(1,3)])                                               #используется объект среза
+print('spam'[::-1])                                                     
+print('spam'[slice(None,None,-1)])
+print(int("42"),str(42))                                                #преобразование из/в строки
+print(repr(42))                                                         #преобразование в строку как если б она была литералом
+S='42'
+I=1
+print(int(S)+I)                                                         #сложение
+print(S+str(I))                                                         #конкатенации
+print(str(3.1415),float('1.5'))
+text="1.234E-10"
+print(float(text))
+print(ord('s'))
+print(chr(115))
