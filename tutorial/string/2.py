@@ -83,4 +83,27 @@ print(L)
 L[3] = 'x'                                                              #Этот прием допустим для списка, но не для строк
 L[4] = 'x'
 print(L)
-
+S= ''.join(L)                                                           #Метод join
+print(S)
+print('SPAM'.join(['eggs','sausage','ham','toast']))
+line = 'aaa bbb ccc'
+col1 = line[0:3]                                                        #разбор текста путем срезов
+col3 = line[8:]
+print(col1)
+print(col3)
+cols = line.split()                                                     #разбор текста метод 
+print(cols)
+line = 'bob,hacker,40'
+cols=line.split(',')
+print(cols)
+line = "1'mSPAMaSPAMlumberjack"
+cols=line.split("SPAM")
+print(cols)
+line = "The khignts who say Ni!\n"
+print(line.rstrip())                                                    #убираем пробельные символы справа
+print(line.upper())                                                     #вверхний регистр
+print(line.isalpha())                                                   #прверяем все ли символы алфавитные
+print(line.endswith('Ni!\n'))                                           #проверка конца строки   
+print(line.startswith('The'))                                           #проверка начала строки
+print(line.find('Ni') != -1)                                            #поиск с использованием метода или выражения
+print('Ni' in line)
