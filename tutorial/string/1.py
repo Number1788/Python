@@ -27,3 +27,22 @@ print('%E' % x)
 print('%-6.2f|%05.2f|%+06.1f' %(x,x,x))         #-6.2f выравнивание по левому 6 символов 2
 print("%s" %x, str(x))
 print('%f,%.2f,%.*f' %(1/3.0, 1/3.0,4,1/3.0))
+print('%(n)d %(x)s' % {'n':1,'x':'spam'})       #форматирование со словарем
+reply ='''
+Greerings...
+Hello %(name)s!
+You age squared is %(age)s
+'''                                             #Шаблон с замещаемым специфакотором формата
+values = {'name':'Bob', 'age':40}               #подготовка фактических значений
+print(reply % values)                           #Подстановка значений
+food ='spam'
+age=40
+z=vars()                                        #функция собирающая все переменные в словарь
+print(z)
+print("%(age)d %(food)s" %z)
+template = '{0}, {1} and {2}'                   #порядковые номера позиционных аргументов
+print(template.format('spam','ham','eggs'))
+template = '{notto}, {pork} and {food}'         #Имена именнованых аргументов
+print(template.format(notto='spam', pork ='ham', food ='eggs'))
+template = '{notto}, {0} and {food}'             #оба варианта
+print(template.format('ham', notto= 'spam', food = 'eggs'))
