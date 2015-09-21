@@ -46,3 +46,18 @@ template = '{notto}, {pork} and {food}'         #Имена именнованы
 print(template.format(notto='spam', pork ='ham', food ='eggs'))
 template = '{notto}, {0} and {food}'             #оба варианта
 print(template.format('ham', notto= 'spam', food = 'eggs'))
+print('{motto}, {0} and {food}'.format(42, motto=3.14, food = [1,2]))
+X='{motto}, {0} and {food}'.format(42, motto=3.14, food = [1,2])
+print(X)
+print(X.split(' and '))
+Y= X.replace('and', 'but under no circumatances')
+print(Y)
+import sys
+print('My {1[spam]} runs {0.platform}'.format(sys,{'spam':'laptop'}))
+                                                #Позиционные аргументы
+print('My {config[spam]} runs {sys.platform}'.format(sys=sys,config={'spam':'laptop'}))
+                                                #Именные аргументы
+somelist= list('Spam')
+print(somelist)
+print('first = {0[0]}, last ={0[2]}'.format(somelist))
+
