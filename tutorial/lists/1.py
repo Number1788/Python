@@ -26,4 +26,12 @@ print(matrix[1])
 print(matrix[2][0])
 print(matrix)
 print(matrix[1][1])
-help(matrix.append)
+L = ['spam','Spam', 'SPAM!']
+L[1]= 'eggs'                            #Присваивание по индексу элементу
+print(L)
+L[0:2] = ['eat','more']                 #ПРисваивание срезу:удаление + вставка
+print(L)                                
+L.append('please')                      #Вызов метода добавление элемента в конец списка
+print(L)
+L.sort()                                #Сортировка элементов списка (S<e)
+print(L)
