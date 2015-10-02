@@ -29,3 +29,9 @@ print(D)
 D['brunch']='Bacon'                                     #Добавление новго элемента
 print(D)
 print(D['ham'])
+D={'spam':2, 'ham':1,'eggs':3}
+print(list(D.values()))
+print(list(D.items()))
+print(D.get('spam'))                                    #Ключ присутсвтует в словаре
+print(D.get('toast'))                                   #Ключ отсутствует
+print(D.get('toast',88))                                #Ключ оствует, 88 значенеие по умолчанию
