@@ -35,3 +35,18 @@ print(list(D.items()))
 print(D.get('spam'))                                    #Ключ присутсвтует в словаре
 print(D.get('toast'))                                   #Ключ отсутствует
 print(D.get('toast',88))                                #Ключ оствует, 88 значенеие по умолчанию
+print(D)
+D2={'toast':4, 'muffin':5}
+D.update(D2)
+print(D)
+#удаление элемента словаря по ключу
+print(D.pop('muffin'))
+print(D.pop('toast'))                                   #Удаляет и возвращает значение заданного ключа
+table = {'Python': 'Guido van Rossum',
+         'Perl': 'Lary Wall',
+         'Tol': 'John Ousterhout'}
+language = 'Python'
+creator = table[language]
+print(creator)
+for lang in table:                                      #То же что и  for lang in table.keys()
+    print(lang, '\t', table[lang])
