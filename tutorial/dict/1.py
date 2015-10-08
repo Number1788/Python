@@ -50,3 +50,9 @@ creator = table[language]
 print(creator)
 for lang in table:                                      #То же что и  for lang in table.keys()
     print(lang, '\t', table[lang])
+Matrix = {}
+Matrix[(2,3,4)]=88
+Matrix[(5,6,7)]=99
+x=2;y=3;z=4
+print(Matrix[(x,y,z)])
+print(Matrix)
