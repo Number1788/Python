@@ -54,5 +54,17 @@ Matrix = {}
 Matrix[(2,3,4)]=88
 Matrix[(5,6,7)]=99
 x=2;y=3;z=4
-print(Matrix[(x,y,z)])
 print(Matrix)
+rec={}                                                  #структуированный список
+rec['name']='mel'
+rec['age']=45
+rec['job']='trainer\writter'
+print(rec['name'])
+mel={ 'name':'Mark',
+      'jobs':['trainer','writter'],
+      'web':'www.rmi.net/"lutz',
+      'home':{'state':'Co','zip':80153}}                #другой вид структурированного списка
+print(mel['name'])
+print(mel['jobs'])
+print(mel['jobs'][1])
+print(mel['home']['zip'])
