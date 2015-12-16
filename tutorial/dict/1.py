@@ -77,3 +77,11 @@ dict([('name','male'),('age',45)])                      #Кортежи ключ
 list(zip(['a','b','c'],[1,2,3]))                        #объеденить ключи и значения
 D=dict(zip(['a','b','c'],[1,2,3]))                      #Создать словарь из результов
 print(D)
+D={k:v for (k,v) in zip(['a','b','c'],[1,2,3])}         #генераторы словарей
+print(D)
+D={x:x ** 2 for x in range(1,5)}
+print(D)
+D={c: c * 4 for c in 'SPAM'}                              #цикл через итерируемый объект
+print(D)
+D= {c.lower(): c + '!' for c in ['SPAM','EGGS','HAM']}
+print(D)
