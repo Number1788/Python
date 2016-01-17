@@ -85,3 +85,16 @@ D={c: c * 4 for c in 'SPAM'}                              #цикл через �
 print(D)
 D= {c.lower(): c + '!' for c in ['SPAM','EGGS','HAM']}
 print(D)
+D=dict.fromkeys(['a','b','c'],0)                        #Init set key
+print(D)
+D={k:0 for k in ['a','b','c']}                          #same as above but with gen
+print(D)
+D= dict.fromkeys('spam')                                #init with defeult values
+print(D)
+D=dict(a=1,b=2,c=3)
+K=D.keys()
+print(K)
+print(list(K))
+V= D.values()
+print(V)
+print(list(V))
