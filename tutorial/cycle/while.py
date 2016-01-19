@@ -22,5 +22,18 @@ while health>0:
           "но сам получает повреждений на",  damage, "очков . \n")
 print( "Ваш герой доблестно сражался и убил" , trolls, "троллей.")
 print("Ho увы! Он пал на поле боя ")
-input("\n\nHaжмитe Enter. чтобы выйти ") 
+input("\n\nHaжмитe Enter. чтобы выйти ")
+#Считалка
+#Демонстрирует break и continue
+count = 0
+while True:
+    count +=1
+    #завершить цикл, если count принимает значение больше 10
+    if count > 10:
+        break
+    #пропустить 5
+    if count == 5:
+        continue
+    print(count)
+input("\n\nНажмите Enter, чтоб выйти")
     
