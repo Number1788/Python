@@ -110,3 +110,15 @@ print('Ni' in line)
 sub = 'Ni!\n'
 print(line.endswith(sub))                                               #проверка наличия подстроки в конце строки
 print(line[-len(sub):]==sub)                                            #с помощью метода или операции извлечения подстроки
+#Только согласные
+#Демонстрирует как создавать новые строки из исходных с помощью цикла for
+message = input("Vvedite text: ")
+new_message = ""
+VOWELS="aeiouаеёиоуыэюя"
+print()
+for letter in message:
+    if letter.lower() not  in VOWELS:
+        new_message += letter
+        print("Sozdana new string: ", new_message)
+print("\nVot vash text bez glasnih:", new_message)
+input("\n\nPress Enter to exit")
