@@ -122,3 +122,27 @@ for letter in message:
         print("Sozdana new string: ", new_message)
 print("\nVot vash text bez glasnih:", new_message)
 input("\n\nPress Enter to exit")
+# Резчик пиццы
+# Демонстрирует срезы строк
+word = "пицца"
+print(
+        """
+        Памятка
+        0   1   2   3   4   5
+        +---+---+---+---+---+
+        | п | и | ц | ц | а |
+        +---+---+---+---+---+
+        -5  -4  -3  -2  -1
+        """
+)
+print("Введите начальный и конечный индексы для того среза 'пиццы', котрый хотите получить")
+print("Для Выхода нажмите Enter не вводя начальную позицию")
+start = None
+while start != "":
+    start = input("\nНачальная позиция: ")
+    if start:
+        start = int(start)
+        finish = int(input("Конечная позиция: "))
+        print("Срез word[", start, ":", finish, "] вглядит как ", end="")
+        print(word[start:finish])
+input("\n\nPress Enter to exit")
