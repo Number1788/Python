@@ -26,3 +26,4 @@ print("\nИтак, в вашем инвентаре:")
 for item in inventory:
     print(item)
 input("\n\npress enter to exit")
+i = 10
